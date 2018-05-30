@@ -17,3 +17,15 @@
   display: flex;
   justify-content: space-around;
 }
+.links {
+  border: 3px dashed red;
+  display: flex;
+  justify-content: flex-end;
+}
+.login {
+  margin-left: 20px;
+}
+.date {
+  display: flex;
+  justify-content: flex-start;
+}
