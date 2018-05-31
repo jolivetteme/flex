@@ -15,10 +15,9 @@
   border: 1px solid #fff;  /* For debugging */
   width: 900px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .links {
-  border: 3px dashed red;
   display: flex;
   justify-content: flex-end;
 }
