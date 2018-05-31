@@ -30,9 +30,11 @@
   color: white;
 }
 .hero-unit {
-  height: 50vh;
-  background-image: url(https://images.unsplash.com/photo-1500417148159-68083bd7333a);
+  background-image: url('images/cover.jpg');
+  opacity: 0.3;
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
+  height: 50vh;
+
 }
