@@ -36,5 +36,31 @@
   background-position: center;
   background-size: cover;
   height: 50vh;
+}
+.boxes {
+  display: flex;
+  border: 1px solid black;
+}
+.box {
+  border: 1px dashed red;
+  justify-content: space-around;
+  padding:10px 20px;
 
+}
+.box .box-title {
+  color:black;
+  font-size:2rem;
+  text-align: center;
+}
+.box1 {
+  background-color:red;
+  color:white;
+}
+.box2 {
+  background-color:blue;
+  color:white;
+}
+.box3 {
+  background-color:green;
+  color:white;
 }
