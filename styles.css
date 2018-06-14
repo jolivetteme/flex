@@ -17,6 +17,12 @@
   display: flex;
   justify-content: space-between;
 }
+
+.top-nav a {
+  color:white;
+  display: block;
+  border:1px dotted white;
+}
 .links {
   display: flex;
   justify-content: flex-end;
