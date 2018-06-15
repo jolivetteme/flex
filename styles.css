@@ -16,26 +16,17 @@
   width: 900px;
   display: flex;
   justify-content: space-between;
+
 }
 
-.top-nav a {
-  color:white;
-  display: block;
-  border:1px dotted white;
-}
-.links {
-  display: flex;
-  justify-content: flex-end;
-}
-.login {
-  margin-left: 20px;
-}
 .date {
   display: flex;
   justify-content: flex-start;
   color: white;
 }
 .hero-unit {
+}
+.bg-img {
   background-image: url('images/cover.jpg');
   opacity: 0.3;
   background-repeat: no-repeat;
@@ -43,30 +34,15 @@
   background-size: cover;
   height: 50vh;
 }
-.boxes {
+.hero-boxes {
   display: flex;
-  border: 1px solid black;
+}
+.hero-box {
+
 }
 .box {
   border: 1px dashed red;
   justify-content: space-around;
   padding:10px 20px;
 
-}
-.box .box-title {
-  color:black;
-  font-size:2rem;
-  text-align: center;
-}
-.box1 {
-  background-color:red;
-  color:white;
-}
-.box2 {
-  background-color:blue;
-  color:white;
-}
-.box3 {
-  background-color:green;
-  color:white;
 }
