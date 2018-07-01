@@ -4,18 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
   <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="responsive.css">
-
-
-  <title>Flex Tutorial</title>
+<title>Flex Tutorial</title>
 </head>
 <body>
   <header>
     <div class="menu-container">
       <div class="date">May 30, 2019</div>
-      <a href="#" class="menu-toggle"><i class="fa fa-bars"> </i> Menu</a>
+      <a href="#" class="menu-toggle"><i class="fa fa-bars"> </i></a>
       <div class="menu">
         <a href="#">Home</a>
         <a href="#">Support</a>
@@ -38,6 +37,9 @@
       <p class="callout-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, inventore perferendis iusto amet. Quam facere ex est quia sed vero non impedit omnis iste, laudantium nesciunt blanditiis cumque ullam aperiam?</p>
     </div>
   </aside>
+  <section id="map">
+    <h3>This is the live maps!</h3>
+  </section>
   <main class="main-content">
     <!-- <div class="story">
       <h3 class="story-title">Our Story</h3>
@@ -54,7 +56,7 @@
         <a href="#"><i class="fa fa-apple fa-3x"></i> iPhone!</a>
       </div>
       <div class="icon">
-        <a href="#"><i class="fa fa-windows fa-3x"></i> Windows!</a>
+        <a href="#"><i class="fa fa-windows fa-3x"></i> Windows!</a>YOUR_API_KEY
       </div>
     </div>
     <div class="download-now-container">
@@ -68,6 +70,9 @@
   </div>
 
   <script src="node_modules/jquery/dist/jquery.min.js" charset="utf-8"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAW-Arre1VrJyfVmZaVA5dinYjs0uu0Ecs&callback=initMap"
+    async defer></script>
+  <script src="geolocation.js" charset="utf-8"></script>
   <script src="ui.js" charset="utf-8"></script>
 </body>
 </html>

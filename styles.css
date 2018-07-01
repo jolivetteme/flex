@@ -20,6 +20,8 @@ html,body {
 .menu-toggle {
   display: flex;
   justify-content: flex-end;
+  font-size:3rem;
+
 }
  .menu-container {
    background:  #5995DA;  /* Blue */
@@ -108,4 +110,14 @@ button.download-now-button {
   border-radius: 1rem;
   padding:20px;
   color:white;
+}
+/**
+ * Maps
+ */
+section#map {
+  display: flex;
+  border: 1px solid red;
+  padding:10px;
+  justify-content: center;
+  /* height:100%; */
 }
