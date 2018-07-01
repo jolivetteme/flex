@@ -1,0 +1,15 @@
+.callouts {
+  background-color: black;
+  color:white;
+  border: 1px solid yellow;
+}
+.callout {
+  padding:10px;
+  border: 1px solid white;
+}
+.callout-title {
+  color:orange;
+}
+.callout-content {
+  color:green;
+}

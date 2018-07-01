@@ -1,0 +1,24 @@
+.menu-container {
+  background:  #5995DA;  /* Blue */
+  padding: 20px 0;
+  border: 1px solid black;
+}
+
+.menu {
+  border: 1px solid #fff;  /* For debugging */
+  display: flex;
+  flex-direction: column;
+}
+
+.menu a {
+  color:white;
+  text-decoration: none;
+  font-size:1.2rem;
+  line-height: 2rem;
+  /* border: 1px solid red; */
+}
+.menu a:hover {
+  text-decoration: overline;
+  background-color: black;
+  color: white;
+}

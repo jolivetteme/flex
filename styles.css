@@ -1,48 +1,111 @@
+@import "nav.css";
+@import "callouts.css";
+html,body {
+  height: 100%;
+  font-size: 1.3rem;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-.menu-container {
+.toggle {
+  background:green;
+  color:yellow;
+  padding:20px;
+}
+/**
+ * Navigation (Menu)
+ */
+.menu-toggle {
   display: flex;
-  justify-content:center;
-  background:  #5995DA;  /* Blue */
-  padding: 20px 0;
+  justify-content: flex-end;
 }
+ .menu-container {
+   background:  #5995DA;  /* Blue */
+   padding: 20px;
+   border: 1px solid red;
+   display: flex;
+   justify-content: space-between;
+ }
 
-.menu {
-  border: 1px solid #fff;  /* For debugging */
-  width: 900px;
+ .menu {
+   border:1px solid red;
+ }
+
+ .menu a {
+   color:white;
+   text-decoration: none;
+   font-size:1.2rem;
+   line-height: 2rem;
+ }
+ .menu a:hover {
+   background-color: black;
+   color: white;
+ }
+
+/**
+ * Callouts
+ */
+ .callouts {
+   background-color: black;
+   color:white;
+   border: 1px solid yellow;
+ }
+ .callout {
+   padding:10px;
+
+ }
+ .callout-title {
+   color:orange;
+ }
+ .callout-content {
+   color:green;
+ }
+/**
+ * Icons
+ */
+.icons-container {
   display: flex;
-  justify-content: space-between;
+
+  /* border: 1px solid purple; */
+  padding:20px;
+  font-size: 1rem;
+}
+.icon {
+  text-align: center;
+}
+.icon a {
+  color:grey;
+  text-decoration: none;
+}
+.icon a:hover {
+  color: black;
 
 }
-
-.date {
+/**
+ * So Maybe More
+ */
+.maybe-more-container {
+  padding:20px;
+}
+.maybe-more-title {
+  margin-bottom: 10px;
+}
+.maybe-more-content {
+  /* text-align: justify; */
+}
+/**
+ * Download Now Button
+ */
+.download-now-container {
   display: flex;
-  justify-content: flex-start;
-  color: white;
+  justify-content: center;
 }
-.hero-unit {
-}
-.bg-img {
-  background-image: url('images/cover.jpg');
-  opacity: 0.3;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 50vh;
-}
-.hero-boxes {
-  display: flex;
-}
-.hero-box {
-
-}
-.box {
-  border: 1px dashed red;
-  justify-content: space-around;
-  padding:10px 20px;
-
+button.download-now-button {
+  font-size:2rem;
+  background-color: green;
+  border-radius: 1rem;
+  padding:20px;
+  color:white;
 }
