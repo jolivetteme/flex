@@ -1,5 +1,5 @@
 (function(){
-    // $('.callouts').hide();
+    $('.callouts').hide();
     $('.callout p').hide();
     $('div.menu').hide();
     $('.toggle').on('click',function(){

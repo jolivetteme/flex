@@ -26,13 +26,12 @@ html,body {
  .menu-container {
    background:  #5995DA;  /* Blue */
    padding: 20px;
-   border: 1px solid red;
    display: flex;
    justify-content: space-between;
  }
 
  .menu {
-   border:1px solid red;
+
  }
 
  .menu a {
@@ -52,7 +51,7 @@ html,body {
  .callouts {
    background-color: black;
    color:white;
-   border: 1px solid yellow;
+   border: 1px solid white;
  }
  .callout {
    padding:10px;
@@ -69,7 +68,7 @@ html,body {
  */
 .icons-container {
   display: flex;
-
+  justify-content: space-between;
   /* border: 1px solid purple; */
   padding:20px;
   font-size: 1rem;
@@ -116,8 +115,9 @@ button.download-now-button {
  */
 section#map {
   display: flex;
-  border: 1px solid red;
+  border-top:6px double black;
+  border-bottom:6px double black;
   padding:10px;
   justify-content: center;
-  /* height:100%; */
+  height: 20rem;
 }
