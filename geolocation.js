@@ -4,11 +4,14 @@
 // locate you.
 var map, infoWindow;
 function initMap() {
-  map = new google.maps.Map(document.getElementById('map'), {
+  let map = new google.maps.Map(document.getElementById('map'), {
     center: {lat: -34.397, lng: 150.644},
     zoom: 15
   });
+  console.log(map);
   infoWindow = new google.maps.InfoWindow;
+
+
 
   // Try HTML5 geolocation.
   if (navigator.geolocation) {
@@ -29,6 +32,7 @@ function initMap() {
     // Browser doesn't support Geolocation
     handleLocationError(false, infoWindow, map.getCenter());
   }
+
 }
 
 function handleLocationError(browserHasGeolocation, infoWindow, pos) {
