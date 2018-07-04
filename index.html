@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
   <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="styles.css">
-	
+
   <title>Flex Tutorial</title>
 </head>
 
@@ -17,17 +17,21 @@
   <header>
     <div class="menu-container">
 
-			<div class="date">May 30, 2019</div>
+			<!-- <div class="date">May 30, 2019</div> -->
+			<div class="menu-toggle">
 
-			<a href="#" class="menu-toggle"><i class="fa fa-bars"> </i></a><!-- Icon -->
+				<label for="menu-toggle">Show Menu</label>
+				<a href="#"><i class="fa fa-bars"> </i></a><!-- Icon -->
+			</div>
 
       <div class="menu">
-        <a href="#">Home</a>
-        <a href="#">Support</a>
-        <a href="#">Login</a>
-        <a href="#">Logout</a>
+        <a href="#"><i class="fa fa-home"></i> Home</a>
+        <a href="#"><i class="fa fa-support"></i> Support</a>
+        <a href="#"><i class="fa fa-sign-in"></i> Login</a>
+        <a href="#"><i class="fa fa-sign-out"></i> Logout</a>
       </div>
 
+		</div>
   </header>
   <div class="toggle" role="navigation">Toggle (Hide Callouts)</div>
   <aside class="callouts">
@@ -81,9 +85,10 @@
 
 
   <script src="geolocation.js" charset="utf-8"></script>
+
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAW-Arre1VrJyfVmZaVA5dinYjs0uu0Ecs&callback=initMap" async defer></script>
 
-  <script src="foodTrucks.Data.js" charset="utf-8"></script>
+
 
 </body>
 

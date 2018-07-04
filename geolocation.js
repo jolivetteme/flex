@@ -5,14 +5,7 @@
 
 var map, infoWindow, myPosition;
 function initMap() {
-  var myLatLng = { lat: -25.363, lng: 131.044 };
-
-  var marker = new google.maps.Marker({
-    position: myLatLng,
-    map: map,
-    title: "Hello World!"
-  });
-	console.log(marker.position.lat());
+  var myLatLng = { lat: 30.2539227, lng: -97.7632664 };
 
 	function changeMarkerPosition(marker) {
 	    var latlng = new google.maps.LatLng(40.748774, -73.985763);
@@ -20,17 +13,12 @@ function initMap() {
 
 			return marker;
 	}
-	// console.log(changeMarkerPosition(marker.home));
-
-	// console.log(marker.position.lat());
-	// console.log(marker.position.lng());
-
-	marker.setMap(map);
-
 
   map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 13
+    zoom: 13,
+    center: myLatLng
   });
+  createMarkers();
 
 
   infoWindow = new google.maps.InfoWindow();
@@ -43,17 +31,13 @@ function initMap() {
           lat: position.coords.latitude,
           lng: position.coords.longitude
         };
-        // infoWindow.setPosition(pos);
-        // infoWindow.setContent('<h3>You here!</h3><img src="https://secure.gravatar.com/avatar/4dae335772ca01eb02b4bae7df063549" />');
-        // infoWindow.open(map);
+        infoWindow.setPosition(pos);
+        infoWindow.setContent('<h3>You here!</h3><img src="https://secure.gravatar.com/avatar/4dae335772ca01eb02b4bae7df063549" />');
+        infoWindow.open(map);
         map.setCenter(pos);
-        let truckLocations = [{ lat: -97.7414332, lng: 30.2718005 }];
-        var currentLocation = {
-          lat: position.coords.latitude,
-          lng: position.coords.longitude
-        };
 
-        map.setCenter(currentLocation);
+
+        // map.setCenter(currentLocation);
 
         // console.log(truckLocations);
       },
@@ -65,6 +49,7 @@ function initMap() {
     // Browser doesn't support Geolocation
     handleLocationError(false, infoWindow, map.getCenter());
   }
+
 }
 
 function handleLocationError(browserHasGeolocation, infoWindow, pos) {
@@ -75,4 +60,21 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
       : "Error: Your browser doesn't support geolocation."
   );
   infoWindow.open(map);
+}
+
+function createMarkers() {
+
+  $.getScript("data/locations.js", function() {
+     // alert("Script loaded but not necessarily executed.");
+     console.log(truckLocations);
+     truckLocations.forEach(function(element, index, array) {
+       var marker = new google.maps.Marker({
+          position: element,
+          map: map,
+          // title:<h1>Maria's Tacos Kabanas</h1>
+        });
+     });
+
+   });
+
 }
