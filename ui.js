@@ -1,7 +1,7 @@
 (function(){
     $('.callouts').hide();
     $('.callout p').hide();
-    $('div.menu').hide();
+    // $('div.menu').hide();
     $('.toggle').on('click',function(){
       $('.callouts').slideToggle();
     });
