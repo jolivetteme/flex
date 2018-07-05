@@ -66,13 +66,34 @@ function createMarkers() {
 
   $.getScript("data/locations.js", function() {
      // alert("Script loaded but not necessarily executed.");
-     console.log(truckLocations);
-     truckLocations.forEach(function(element, index, array) {
+     truckLocations.forEach(function(current, index, array) {
+
        var marker = new google.maps.Marker({
-          position: element,
+          position: {lat:current.lat,lng:current.lng},
           map: map,
-          // title:<h1>Maria's Tacos Kabanas</h1>
+          title:current.businessName+" "+current.phone
         });
+
+        var infowindow = new google.maps.InfoWindow({
+
+          content:""+
+          '<div class="locations">'+
+            '<h2><a href="#">'+current.businessName+'</a></h2>'+
+            //'<img src="images/tacos.jpg" />'+
+            '<div class="links">'+
+              '<div><a href="'+current.website+'">Menu</a></div>'+
+              '<div><a href="#">Directions</a></div>'+
+              '<div><a href="#">'+current.phone+'</a></div>'+
+            '</div>'+
+          "</div>"
+        });
+        google.maps.event.addListener(marker, 'click', function() {
+           // infowindow.setContent('Hello World');
+           infowindow.open(map, this);
+        });
+        // marker.addListener('click',function(){
+        //   infowindow.open(map,marker);
+        // });
      });
 
    });

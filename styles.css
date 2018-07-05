@@ -117,6 +117,7 @@ html,body {
 .download-now-container {
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 button.download-now-button {
   font-size:2rem;
@@ -124,6 +125,12 @@ button.download-now-button {
   border-radius: 1rem;
   padding:20px;
   color:white;
+}
+button.download-now-button:hover {
+  color:black;
+  background-color: white;
+  border:3px solid grey;
+
 }
 /**
  * Maps

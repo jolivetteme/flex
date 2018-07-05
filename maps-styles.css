@@ -1,0 +1,19 @@
+.locations {
+  font-size: 1.2rem;
+  text-decoration: underline;
+}
+.locations img {
+  width:8rem;
+
+
+}
+.links {
+  display: flex;
+  flex-direction:column;
+  font-size:1rem;
+  text-align: right;
+}
+.links a {
+  font-size:0.7rem;
+  color:black;
+}
